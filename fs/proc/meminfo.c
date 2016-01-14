@@ -61,9 +61,6 @@ static int meminfo_proc_show(struct seq_file *m, void *v)
 	/*
 	 * Estimate the amount of memory available for userspace allocations,
 	 * without causing swapping.
-	 *
-	 * Free memory cannot be taken below the low watermark, before the
-	 * system starts swapping.
 	 */
 	available = i.freeram - totalreserve_pages;
 
