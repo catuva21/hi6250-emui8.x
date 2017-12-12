@@ -2,3 +2,5 @@ drivers/hisi/tzdriver/cfc_graph.pyc
 drivers/hisi/tzdriver/cfc_graphgen.pyc
 drivers/hisi/tzdriver/cfc_rule_parser.pyc
 drivers/huawei_platform/lcd/tools/localperl/lib/5.14.2/x86_64-linux-thread-multi/CORE/libperl.a
+drivers/huawei_platform/oases/inlinehook_offset.h
+net/wireguard/
