@@ -5324,6 +5324,7 @@ static void ufshcd_exception_event_handler(struct work_struct *work)
 	hba = container_of(work, struct ufs_hba, eeh_work);
 
 	err = pm_runtime_get_sync(hba->dev);
+	scsi_block_requests(hba->host);
 	if (err < 0) {
 		dev_err(hba->dev, "%s: failed to exit from hibernate8 %d\n",
 			__func__, err);
@@ -5345,6 +5346,7 @@ static void ufshcd_exception_event_handler(struct work_struct *work)
 					__func__, err);
 	}
 out:
+	scsi_unblock_requests(hba->host);
 	pm_runtime_put_sync(hba->dev);
 	return;
 }
