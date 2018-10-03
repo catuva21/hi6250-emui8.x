@@ -18,10 +18,10 @@
 			sched-energy-costs = <&CPU_COST_A53 &CLUSTER_COST_A53>;
 			operating-points-v2 = <&cluster0_opp_table>;
 			operating-points = <
-				480000	700000
-				807000	800000
-				1306000	900000
-				1709000	1000000
+				480000	620000
+				807000	720000
+				1306000	820000
+				1709000	940000
 			>;
 		};
 		little1:cpu@1 {
@@ -37,10 +37,10 @@
 			sched-energy-costs = <&CPU_COST_A53 &CLUSTER_COST_A53>;
 			operating-points-v2 = <&cluster0_opp_table>;
 			operating-points = <
-				480000	700000
-				807000	800000
-				1306000	900000
-				1709000	1000000
+				480000	620000
+				807000	720000
+				1306000	820000
+				1709000	940000
 			>;
 		};
 		little2:cpu@2 {
@@ -56,10 +56,10 @@
 			sched-energy-costs = <&CPU_COST_A53 &CLUSTER_COST_A53>;
 			operating-points-v2 = <&cluster0_opp_table>;
 			operating-points = <
-				480000	700000
-				807000	800000
-				1306000	900000
-				1709000	1000000
+				480000	620000
+				807000	720000
+				1306000	820000
+				1709000	940000
 			>;
 		};
 		little3:cpu@3 {
@@ -75,10 +75,10 @@
 			sched-energy-costs = <&CPU_COST_A53 &CLUSTER_COST_A53>;
 			operating-points-v2 = <&cluster0_opp_table>;
 			operating-points = <
-				480000	700000
-				807000	800000
-				1306000	900000
-				1709000	1000000
+				480000	620000
+				807000	720000
+				1306000	820000
+				1709000	940000
 			>;
 		};
 
@@ -95,10 +95,10 @@
 			sched-energy-costs = <&CPU_COST_A72 &CLUSTER_COST_A72>;
 			operating-points-v2 = <&cluster1_opp_table>;
 			operating-points = <
-				1402000	800000
-				1805000	900000
-				2016000	1000000
-				2112000	1000000
+				1402000	750000
+				1805000	850000
+				2016000	950000
+				2112000	1050000
 				2362000 1100000
 			>;
 		};
@@ -115,10 +115,10 @@
 			operating-points-v2 = <&cluster1_opp_table>;
 			sched-energy-costs = <&CPU_COST_A72 &CLUSTER_COST_A72>;
 			operating-points = <
-				1402000	800000
-				1805000	900000
-				2016000	1000000
-				2112000	1000000
+				1402000	750000
+				1805000	850000
+				2016000	950000
+				2112000	1050000
 				2362000 1100000
 			>;
 		};
@@ -135,10 +135,10 @@
 			operating-points-v2 = <&cluster1_opp_table>;
 			sched-energy-costs = <&CPU_COST_A72 &CLUSTER_COST_A72>;
 			operating-points = <
-				1402000	800000
-				1805000	900000
-				2016000	1000000
-				2112000	1000000
+				1402000	750000
+				1805000	850000
+				2016000	950000
+				2112000	1050000
 				2362000 1100000
 			>;
 		};
@@ -155,10 +155,10 @@
 			operating-points-v2 = <&cluster1_opp_table>;
 			sched-energy-costs = <&CPU_COST_A72 &CLUSTER_COST_A72>;
 			operating-points = <
-				1402000	800000
-				1805000	900000
-				2016000	1000000
-				2112000	1000000
+				1402000	750000
+				1805000	850000
+				2016000	950000
+				2112000	1050000
 				2362000 1100000
 			>;
 		};
@@ -170,25 +170,25 @@
 			opp0 {
 				opp-supported-hw = <0x7>;
 				opp-hz = /bits/ 64 <480000000>;
-				opp-microvolt = <700000>;
+				opp-microvolt = <620000>;
 				clock-latency-ns = <500000>;
 			};
 			opp1 {
 				opp-supported-hw = <0x7>;
 				opp-hz = /bits/ 64 <807000000>;
-				opp-microvolt = <800000>;
+				opp-microvolt = <720000>;
 				clock-latency-ns = <500000>;
 			};
 			opp2 {
 				opp-supported-hw = <0x7>;
 				opp-hz = /bits/ 64 <1306000000>;
-				opp-microvolt = <900000>;
+				opp-microvolt = <820000>;
 				clock-latency-ns = <500000>;
 			};
 			opp3 {
 				opp-supported-hw = <0x7>;
 				opp-hz = /bits/ 64 <1709000000>;
-				opp-microvolt = <1000000>;
+				opp-microvolt = <940000>;
 				clock-latency-ns = <500000>;
 			};
 		};
@@ -200,25 +200,25 @@
 			opp0 {
 				opp-supported-hw = <0x7>;
 				opp-hz = /bits/ 64 <1402000000>;
-				opp-microvolt = <800000>;
+				opp-microvolt = <750000>;
 				clock-latency-ns = <500000>;
 			};
 			opp1 {
 				opp-supported-hw = <0x7>;
 				opp-hz = /bits/ 64 <1805000000>;
-				opp-microvolt = <900000>;
+				opp-microvolt = <850000>;
 				clock-latency-ns = <500000>;
 			};
 			opp2 {
 				opp-supported-hw = <0x7>;
 				opp-hz = /bits/ 64 <2016000000>;
-				opp-microvolt = <1000000>;
+				opp-microvolt = <950000>;
 				clock-latency-ns = <500000>;
 			};
 			opp3 {
 				opp-supported-hw = <0x7>;
 				opp-hz = /bits/ 64 <2112000000>;
-				opp-microvolt = <1000000>;
+				opp-microvolt = <1050000>;
 				clock-latency-ns = <500000>;
 			};
 			opp4 {
