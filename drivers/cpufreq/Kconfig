@@ -131,6 +131,10 @@ config CPU_FREQ_DEFAULT_GOV_SCHED
 
 endchoice
 
+config CPU_FREQ_DEFAULT_GOV_DARKNESS
+	bool "darkness"
+    select CPU_FREQ_GOV_DARKNESS
+
 config CPU_FREQ_DEFAULT_GOV_BIOSHOCK
  	bool "BioShock"
  	select CPU_FREQ_GOV_BIOSHOCK
@@ -215,6 +219,9 @@ config CPU_FREQ_GOV_INTERACTIVE
 	  For details, take a look at linux/Documentation/cpu-freq.
 
 	  If in doubt, say N.
+
+config CPU_FREQ_GOV_DARKNESS
+     tristate "'darkness' cpufreq policy governor"
 
 config CPU_FREQ_GOV_BIOSHOCK
  	tristate "'bioshock' cpufreq bioshock"
