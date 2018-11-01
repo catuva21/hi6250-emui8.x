@@ -35,7 +35,7 @@ function make_kernel() {
   echo -e "$cyan***********************************************"
   echo -e "             Building kernel          "
   echo -e "***********************************************$nocol"
-  make ARCH=arm64 O=../out -j4
+  make ARCH=arm64 O=../out -j8
   if ! [ -a $KERNEL_IMG ];
   then
     echo -e "$red Kernel Compilation failed! Fix the errors! $nocol"
