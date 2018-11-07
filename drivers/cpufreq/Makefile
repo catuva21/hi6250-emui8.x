@@ -19,6 +19,8 @@ obj-$(CONFIG_CPU_FREQ_GOV_BIOSHOCK)	+= cpufreq_bioshock.o
 obj-$(CONFIG_CPU_FREQ_GOV_DARKNESS) 	+= cpufreq_darkness.o
 obj-$(CONFIG_CPU_FREQ_GOV_DANCEDANCE)		+= cpufreq_dancedance.o
 obj-$(CONFIG_CPU_FREQ_GOV_INTELLIACTIVE)	+= cpufreq_intelliactive.o
+obj-$(CONFIG_CPU_FREQ_GOV_ZZMOOVE)      += cpufreq_zzmoove.o
+obj-$(CONFIG_CPU_FREQ_GOV_ALUCARD)	+= cpufreq_alucard.o
 
 obj-$(CONFIG_CPUFREQ_DT)		+= cpufreq-dt.o
 
