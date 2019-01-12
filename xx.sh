@@ -16,7 +16,7 @@ DEVICE="P10l"
 FINAL_ZIP=$KERNEL_NAME-$VERSION-$DATE-$DEVICE.zip
 
 # Dirs
-KERNEL_DIR=~/Escritorio/Akernels/Morfuz
+KERNEL_DIR=~/Escritorio/Akernels/hi6250-emui8.x
 OUT_DIR=~/Escritorio/Akernels/out
 UPLOAD_DIR=~/Escritorio/Akernels/Files/flash_zip
 ANYKERNEL_DIR=$KERNEL_DIR/AnyKernel2
@@ -49,7 +49,7 @@ cp $KERNEL_IMG $ANYKERNEL_DIR/kernel-Image.gz
 mkdir -p $UPLOAD_DIR
 cd $ANYKERNEL_DIR
 zip -r9 UPDATE-AnyKernel2.zip * -x README UPDATE-AnyKernel2.zip
-mv $ANYKERNEL_DIR/UPDATE-AnyKernel2.zip $UPLOAD_DIR/Morfuz/$FINAL_ZIP
+mv $ANYKERNEL_DIR/UPDATE-AnyKernel2.zip $UPLOAD_DIR/hi6250-emui8.x/$FINAL_ZIP
 }
 
 # Options
